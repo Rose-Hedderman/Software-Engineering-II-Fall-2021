@@ -1,0 +1,37 @@
+html {
+text-align: left top}
+h1 {
+	font-family: "Lucida Handwriting", Cursive;
+	text-align: center;
+	color: black;
+	size: 15 pt}
+#1h2 {
+	color: blue;
+}
+ body{
+	 background-color: rgb(245,252,255);
+	 
+	}
+h2 {
+	font-family: "Georgia", Serif;
+}
+h3 {
+	font-family: "Georgia", Serif;
+}
+p {
+	font-family: "Georgia", Serif;
+}
+myphoto{
+	text-align: center;
+}
+table { 
+	font-family: "Georgia", Serif;
+			}
+.center{
+	margin-left: auto;
+	margin-right: auto;
+	/*margin-top: 30px; */
+	margin-bottom: 30px;
+}
+a {color: blue;}
+a: visited {color: blue;}

@@ -1,0 +1,19 @@
+p { color: blue;
+/* box something (border, padding, margin */
+	border: 3px dashed red; /* width style color*/
+	/* padding is area between border and text*/
+	padding: 20px 30px 20px 3px; /* top right left bottom*/
+	/* margin is area outside border*/
+	margin: 20px 30px 20px 3px	/* top right left bottom*/
+			}
+a: link {}
+a: visited {color: brown;}
+a: hover {}
+a: active {} /* when you click but before you release*/
+
+body {
+	background-image: url(UTCS.png);
+	background-repeat: no-repeat;
+	background-position: 500px 200px; /* can do percentages too */
+	
+}

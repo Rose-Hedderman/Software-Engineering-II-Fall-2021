@@ -1,0 +1,12 @@
+h1{
+	font-family: "Arial", Sans-serif;
+	text-align: center;
+	color: black;
+	size: 15 pt
+}
+p {
+	font-family: "Georgia", Serif;
+}
+a {color: blue;}
+a: visited {color: blue;}
+
