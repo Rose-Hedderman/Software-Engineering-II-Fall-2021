@@ -1,0 +1,20 @@
+<html>
+	<head> </head>
+	<body>
+		<h1>Books</h1>
+		{% if books == [] %}
+			<p>No books exist</p>	
+		{% else %}
+			{% for i in books %}
+				<div> 
+					<P>{{i.title}}</P>
+                    <div>
+                        <a href="{{url_for('deleteBook', book_id=i.id)}}"> Delete book</a>
+                    </div>
+					
+					<br/> <br/>
+				</div>
+			{% endfor %}
+		{% endif %}
+	</body>
+</html>

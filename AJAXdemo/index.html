@@ -1,0 +1,18 @@
+<script type="text/javascript">
+    function getcontent()
+    {
+        var xmlHTTP = new XMLHttpRequest();
+ 
+        xmlHTTP.open("GET", "list.html", false);
+ 
+        xmlHTTP.send(null);
+ 
+        var ele = document.getElementById("content");
+        ele.innerHTML = xmlHTTP.responseText;
+    }
+</script>
+<form>
+    <input onclick="getcontent();" type="button" value="get content" >
+</form>
+ 
+<div id="content"></div>

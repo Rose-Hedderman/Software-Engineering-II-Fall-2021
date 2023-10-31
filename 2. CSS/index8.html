@@ -1,0 +1,213 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<html> 
+  <head>
+    <title>Basics of HTML</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="description" content="The basic HTML tags with examples.">
+    <meta name="keywords" content="html,headings,bullets,links,tables,div, span">
+    <link rel="shortcut icon" href="images/html-icon-md.png">
+    <!-- internal styling -->
+	<style type="text/css">
+	/*
+		style tags encloses CSS rules. Each rule has a selector and a declaration block:
+		selector1: { property1: value1;
+					 property2: value2; 
+					 ...
+					 propertyn: valuen;
+		...					   
+		selectorn: { property1: value1;
+					 property2: value2; 
+					 ...
+					 propertyn: valuen;
+	*/
+	p { color:blue;
+		font-family:arial;
+		font-style:italic;
+		text-indent:25px;
+		text-align:left;
+		
+		}
+/*
+	h1 { background-color: yellow;
+		 border:3px dashed red; /*border: width style color */
+		 padding-top: 20px;
+		 padding-bottom: 20px;
+		 padding-left: 30px;
+		 padding-right:30px;
+		 margin: 50px 50px 50px 50px; /*margin: top left bottom right */
+		 }	
+*/
+    ul { color:blue;
+	}
+	ol { color:green;
+	}	
+	img { width:250px;
+		  height:150px;	
+	}
+	/* anchor tag has 4 properties: link, visited, hover, and active */ 
+	a:link {color:green;          /* initial apperance of the link */
+		    text-decoration:none;
+			}
+	a:visited { color: brown; /* after being clicked */
+	} 
+	a:hover { background-color:blue; /* when hovering over the link */
+	          color:white;  
+			  text-decoration:underlined;
+			  font-weight:bold;}
+	a:active { background-color:orange; /* when clicking before releasing the button */
+	}	
+	
+	#firsth1 { background-color: orange;
+		 border:3px solid brown; /*border: width style color */
+		 padding-top: 20px;
+		 padding-bottom: 20px;
+		 padding-left: 30px;
+		 padding-right:30px;
+		 margin: 50px 50px 50px 0px; /*margin: top left bottom right */
+		 }	
+		 
+	#secondh1 { background-color: yellow;
+		 border:3px dashed red; /*border: width style color */
+		 padding-top: 20px;
+		 padding-bottom: 20px;
+		 padding-left: 30px;
+		 padding-right:30px;
+		 margin: 50px 50px 50px 50px; /*margin: top left bottom right */
+		 }	
+	</style>
+	
+  </head>
+ <!--Styling an individual element by assigning id to an element -->
+  <body>
+    <a name="top"></a>
+	<h1 id="firsth1">Heading Elements</h1>
+	<hr />
+    <h1 id="secondh1">Heading level 1</h1>
+    <p>
+      This is a regular text paragraph. This is a regular text paragraph. This is a regular text paragraph. This is a regular text paragraph. This is a regular text paragraph. This is a regular text paragraph. This is a regular text paragraph. This is a regular text paragraph. This is a regular text paragraph. This is a regular text paragraph. This is a regular text paragraph. This is a regular text paragraph. This is a regular text paragraph. This is a regular text paragraph. This is a regular text paragraph. This is a regular text paragraph. This is a regular text paragraph.
+    </p>
+	<h2>Heading level 2</h2>
+    <p>
+      This is a regular text paragraph.
+    </p>   
+	<h3>Heading level 3</h3>
+    <p>
+      This is a regular text paragraph.
+    </p>   
+	<h4>Heading level 4</h4>
+    <p>
+      This is a regular text paragraph.
+    </p>   
+	<h5>Heading level 5</h5>
+    <p>
+      This is a regular text paragraph.
+    </p>
+	<h6>Heading level 6</h6>
+    <p>
+      This is a regular text paragraph.
+    </p>
+	<hr />
+	<h2>Create a text the links to Google</h2>
+	<a href="http://www.google.com">Google</a>
+	<hr />
+	<h2>Create a link to top of the page</h2>
+	<a href="#top">Back to top</a> <br/><!-- you need to create an anchor, <A name="top">, at the top of the page -->
+	<a href="#">Back to top, again</a>    <!-- no need to create an anchor -->
+    <hr />
+	<h2>Create a link to another page</h2>
+	<a href="page2.html">Move to another page</a>
+	<hr />
+	<h2>Insert an image into your webpage</h2>
+	<img src="images/UTCS.png" alt="UTCS logo">
+	<hr />
+	<h2>Create an unordered list</h2>
+    <ul>
+      <li>
+        <em>First</em> bullet.
+      </li>
+      <li>
+        <em>Second</em> bullet. 
+      </li>
+    </ul>
+	<br />
+		<h2>Create an ordered list</h2>
+    <ol>
+      <li>
+        <strong>First</strong> bullet.
+      </li>
+      <li>
+        <strong>Second</strong> bullet. 
+      </li>
+    </ol>
+	<hr />
+	<h2>Create a simple table: no border, title, or headings</h2>	
+	<table> <!-- Table tags: <table> </table> -->
+		<tr>     <!-- Row tags: <tr> </tr> -->
+		  <td>Data 1,1</td> <!-- Cell tags (standard cell): <td> </td> by default, these are regular and left-aligned.-->
+		  <td>Data 1,2</td>
+		</tr>
+		<tr>
+		  <td>Data 2,1</td>
+		  <td>Data 2,2</td>
+		</tr>
+		<tr>
+		  <td>Data 3,1</td>
+		  <td>Data 3,2</td>
+		</tr>
+    </table>
+    <hr />
+	<h2>Create a table: adding a border, title, and headings</h2>	   
+    <table  BORDER="2">
+		<tr>                <!-- table title should be insides <tr> </tr> tags -->
+			<th COLSPAN="2"> <!-- Cell tags (header cell): <th> </th> by default, these codes center the heading and set it in bold type. -->
+						   <!-- colspan="2" will cause the title to span across the 2 columns below it. -->
+			 <h3><br/>Table Title</h3>
+			</th>
+		</tr>
+		<tr> 
+		  <th>Column 1</th>  
+		  <th>Column 2</th>
+		</tr>  
+		<tr>     
+		  <td>Data 1,1</td> 
+		  <td>Data 1,2</td>
+		</tr>
+		<tr>
+		  <td>Data 2,1</td>
+		  <td>Data 2,2</td>
+		</tr>
+		<tr>
+		  <td>Data 3,1</td>
+		  <td>Data 3,2</td>
+		</tr>  
+	</table>
+    <hr />
+	<h2>Create a div</h2>
+	<ul>
+		<li>a div is a block level container used to group block-elements to format them with CSS.</li>
+		<li>this enables you to style and position the div.</li> 
+		<li>by adding class and/or id attributes to your div elements, you can then use CSS to style and position the div.</li>
+	</ul>
+	<h3>Example</h3>
+	<div id="sidebar">
+		<h1>Sidebar Heading</h1>
+		<p>Sidebar text</p>
+		<p>More sidebar text</p>
+	</div>
+	    <hr />
+	<h2>Create a span</h2>
+	<ul>
+		<li>span element is similar to div in that it's used to add structure to your content.</li>
+		<li>the difference is that div is a block-level element, while span is an inline element</li>
+		<ul>
+			<li>Block-level elements, such as div, h1, and p, are elements that are designed to hold relatively large or stand-alone blocks of content, such as paragraphs of text. A block-level element always starts on a new line.</li>
+			<li>Inline elements, such as span, a, and img, are designed to hold smaller pieces of content — such as a few words or a sentence — within a larger block of content. Adding an inline element doesn't cause a new line to be created. Block-level elements can contain inline elements, but inline elements can't contain block-level elements.</li>
+        </ul>
+	</ul>
+	<h3>Example</h3>
+	<p>Some of our products include <span class="product">SuperWidgets</span>, <span class="product">MegaWidgets</span>, and <span class="product">WonderWidgets</span>.</p>
+ 
+  </body>
+</html>

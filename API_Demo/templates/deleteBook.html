@@ -1,0 +1,15 @@
+<html>
+	<head> </head>
+	<body>		
+		<h1>Delete Book</h1>
+		<!-- {% if single_book == [] %}
+			<p>No books exist</p>	
+		{% else %} -->
+            <p>{{id}}  {{title}}</p>
+            <form action="{{url_for('bookDelete', book_id=id)}}" method = 'POST'>
+                <input type='submit' value='Delete'>
+                <a href="{{url_for('index')}}">Cancel</a> <br/>
+            </form>
+		<!-- {% endif %} -->
+	</body>
+</html>
