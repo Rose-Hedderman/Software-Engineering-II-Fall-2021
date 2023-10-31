@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1{text-align: center;}
+            h2{text-align: center;}
+            p{font-family: 'Times New Roman', Times, serif;}
+        </style>
+       <title>About Page</title>
+       <link rel="stylesheet" href="{{ url_for('static', filename='css/splashStyle.css') }}">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">    
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" >UNIfy</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{{ url_for('Splash') }}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('Locations') }}">Location</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('Universities') }}">Universities   </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('Colleges') }}">Colleges</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('About') }}">About</a>
+                        </li>
+                </div>
+            </div>
+        </nav>
+        <center>
+            <h3>Developers: Sebastian Castellanos, Rose Hedderman, Mihir Kamble, Jin Lin, Naho Shioyama</h3>
+
+
+            <p>As former highschool graduates, we were once faced with the difficult challange of deciding which university was the right one for each of us.</p>
+            <p>Our goal is to provide a service that simplifies the confusion and complexity when it comes to universities. </p>
+            <br>
+            <div class="parentContainer">
+                <div class="centerwrapper">
+                    <h2>Developer Information</h2>
+                    <hr>
+                    <br>
+                    <div class="personContainer">
+                        <h3>Sebastian Castellanos</h3>
+                        <br>
+                        <br>
+                        <p> I was born and raised in East Texas in a small town called Lufkin. I graduated from Lufkin High School in 2018, and I am now attending The University of Texas at Austin. I am currently pursuing a bachelor's degree in Mathematics as well as a certification in computer programming, which includes the study of Computer Science. If all goes as planned, I expect to graduate in the spring of 2022 as a first-generation graduate. After graduating, I plan to pursue a career in the tech industry. My full name is Julian Sebastian Castellanos, but I preferred to be called Sebastian Castellanos.
+                        <br>
+                        <br>
+                        <img src="{{ url_for('static', filename='images/PLACEHOLDER') }}" style="max-width: 100%; height: 300px;">
+                        </p>
+                    </div>
+
+                    <div class="personContainer">
+                        <h3>Rose Hedderman</h3>
+                        <br>
+                        <br>
+                        <p>I am a junior at the University of Texas at Austin studying Computational Biology and Neuroscience while pursuing the Elements of Computing certificate. My technical interests include machine learning, data science, and deep learning. In my free time, I enjoy playing volleyball with my friends and participating in clubs such as Young Life and MLDS Club.</p>
+                        <br>
+                        <br>
+                        <img src="{{ url_for('static', filename='images/Rose_Headshot.jpg') }}" style="max-width: 100%; height: 300px;">
+                    </div>
+                    
+                    <div class="personContainer">
+                        <h3>Mihir Kamble</h3>
+                        <br>
+                        <br>
+                        <p>I am a third-year undergraduate pursuing a B.S. in Aerospace Engineering and a certificate in Computer Science at the University of Texas at Austin. My current academic interests are in flight software, simulation, and controls. Outside of school, I love playing the piano, spending time outdoors, and hanging out with my dog.</p>
+                        <br>
+                        <br>
+                        <img src="{{ url_for('static', filename='images/Mihir_Headshot.jpg') }}" style="max-width: 100%; height: 300px;">
+                    </div>
+
+                    <div class="personContainer">
+                        <h3>Jin Lin</h3>
+                        <br>
+                        <br>
+                        <p>My name is Jintao Lin. I am a fourth year student pursuing a degree in Urban Studies in the Department of Geography as well as Elements of Computing Certificate at The University of Texas at Austin. My ultimate career goal is to become a Regional Planner.</p>
+                        <br>
+                        <br>
+                        <img src="{{ url_for('static', filename='images/PLACEHOLDER') }}" style="max-width: 100%; height: 300px;">
+                    </div>
+
+                    <div class="personContainer">
+                        <h3>Naho Shioyama</h3>
+                        <br>
+                        <br>
+                        <p>I am a junior in chemical engineering at The University of Texas at Austin and am also pursuing an Elements of Computing Certificate. I am very passionate about learning and eager to understand how technology, innovation, and business can converge to efficiently solve industry problems. In my free time, you can find me bouldering, cooking, and dancing.</p>
+                        <br>
+                        <br>
+                        <img src="{{ url_for('static', filename='images/PLACEHOLDER') }}" style="max-width: 100%; height: 300px;">
+                    </div>
+
+                </div>
+            
+                <hr>
+                <div>
+                    <h2>Statistics</h2>
+                    <p>Total Commits:</p>
+                    <p>Total Issues:</p>
+                    <p>Total Unit Tests:</p>
+
+                    <a href="https://gitlab.com/mihirkamble_UT/cs331e-idb/-/issues"> GitLab Issue Tracker</a> &emsp;||&emsp;
+                    <a href="https://gitlab.com/mihirkamble_UT/cs331e-idb">GitLab Repo</a> &emsp;||&emsp;
+                    <a href="https://en.wikipedia.org/wiki/GitLab">GitLab Wikipedia</a>
+                </div>
+                <hr/>
+                <h2>Tools Used</h2>
+                <p>HTML &emsp; GitLab</p>
+
+            </div>
+        </center>    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    </body>
+</html>

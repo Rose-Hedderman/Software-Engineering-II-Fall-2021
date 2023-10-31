@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title> Oklahoma </title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/splashStyle.css') }}">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">	
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		  	<div class="container-fluid">
+		    	<a class="navbar-brand" href="#" >UNIfy</a>
+
+		    	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		      	<span class="navbar-toggler-icon"></span>
+		    	</button>
+
+		    	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		      		<ul class="navbar-nav ml-auto">
+		        		<li class="nav-item">
+		          			<a class="nav-link active" aria-current="page" href="{{ url_for('Splash') }}">Home</a>
+		        		</li>
+		        		<li class="nav-item">
+		          			<a class="nav-link" href="{{ url_for('Locations') }}">Location</a>
+		        		</li>
+		        		<li class="nav-item">
+		          			<a class="nav-link" href="{{ url_for('Universities') }}">Universities	</a>
+		        		</li>
+						<li class="nav-item">
+		          			<a class="nav-link" href="{{ url_for('Colleges') }}">Colleges</a>
+		        		</li>
+						<li class="nav-item">
+		          			<a class="nav-link" href="{{ url_for('About') }}">About</a>
+		        		</li>
+		    	</div>
+			</div>
+		</nav>
+
+		<div class="pageHeader">
+			<h1> Oklahoma </h1>
+		</div>
+		<center>
+			<h5>The Sooner State </h5>
+		</center>
+
+		<div class="itemPageContainer">
+			<div>
+				<img class="UniversityImg2" src="{{ url_for('static', filename='images/ok_location.jpg')}}" alt="Oklahoma University">
+				<div style="margin: 25px;">
+					<h5 class="card-text" style="text-align: left;"><b>Population: </b>3.7 million </h5>
+
+                    <h5 class="card-text" style="text-align: left;"><b>Number of Schools: </b>136 </h5>
+
+					<h5 class="card-text" style="text-align: left;"><b>Average In-State Tuition Cost of Attendance: </b>$19,137 </h5>
+
+					<h5 class="card-text" style="text-align: left;"><b>Average Out-of-State Tuition Cost of Attendance: </b>$26,475 </h5>
+
+					<h5 class="card-text" style="text-align: left;"><b>Major Cities: </b>Oklahoma City, Tulsa, Norman, Broken Arrow, Lawton </h5>
+
+					<h5 class="card-text" style="text-align: left;"><b>List of Universities: </b><a href="{{url_for('OU')}}">The University of Oklahoma</a>, Oklahoma State University, University of Tulsa </h5>
+
+				</div>
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+	</body>
+</html>
